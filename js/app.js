@@ -1,14 +1,30 @@
-angular.module('TodoApp', ['ngRoute', 'RouteControllers']);
+angular.module('grahamdunnemusic', ['ngRoute', 'RouteControllers']);
  
-angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
+angular.module('grahamdunnemusic').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
  
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/accounts/register', {
-        templateUrl: 'templates/register.html',
-        controller: 'RegisterController'
+    .when('/Productions', {
+        templateUrl: 'templates/productions.html',
+        controller: 'ProductionController'
+    });
+    .when('/Compositions', {
+        templateUrl: 'templates/compositions.html',
+        controller: 'CompositionsController'
+    });
+    .when('/Guitar', {
+        templateUrl: 'templates/guitar.html',
+        controller: 'GuitarController'
+    });
+    .when('/Transcriptions', {
+        templateUrl: 'templates/transcriptions.html',
+        controller: 'TranscriptionsController'
+    });
+    .when('/Contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'ContactController'
     });
 });
