@@ -1,0 +1,22 @@
+{
+  "name": "sites-grahamdunnemusic",
+  "description": "music website for Graham Dunne",
+  "main": "index.js",
+  "authors": [
+    "Graham Dunne"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Gramsham/sites-grahamdunnemusic",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}
