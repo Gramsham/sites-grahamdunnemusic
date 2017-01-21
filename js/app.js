@@ -7,6 +7,10 @@ angular.module('grahamdunnemusic').config(function($locationProvider, $routeProv
         templateUrl:'index.html',
         controller: 'IndexController'
     })
+    .when('/About', {
+        templateUrl: 'templates/bio.html',
+        controller: 'AboutController'
+    });
     .when('/Productions', {
         templateUrl: 'templates/productions.html',
         controller: 'ProductionController'
