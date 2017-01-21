@@ -1,0 +1,19 @@
+{
+  "name": "sites-grahamdunnemusic",
+  "version": "1.0.0",
+  "description": "music website for Graham Dunne",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gramsham/sites-grahamdunnemusic.git"
+  },
+  "author": "Graham Dunne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gramsham/sites-grahamdunnemusic/issues"
+  },
+  "homepage": "https://github.com/Gramsham/sites-grahamdunnemusic#readme"
+}
