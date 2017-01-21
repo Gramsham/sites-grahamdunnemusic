@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
+<html ng-app='grahamdunnemusic'>
 <head>
-	
+	<base href="/"> <!-- needed for Angular HTML 5 mode -->
 	<meta charset="UTF-8">
-	<title>Contact | Graham Dunne</title>
+	<title>Home | Graham Dunne</title>
 	<meta property="og:title" content="Contact | Graham Dunne" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.grahamdunnemusic.com/contact" />
-	<meta property="og:image" content="http://www.grahamdunnemusic.com/images/Loopers6.png" />
+	<meta property="og:image" content="http://www.grahamdunnemusic.com/css/images/Graham_Godin.jpg" />
 	<meta property="fb:app_id" content="1498139396870513"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
-	<link rel="stylesheet" type="text/css" href="myStyle.css" media="screen" />
+	
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 	</head>
 <body>
 
@@ -108,9 +112,13 @@
 <div id= "footer1">
 		<h6>Website by Gramsham Multi Media Productions. Copyright © 2017. Graham Dunne. All Rights Reserved.</h6>
 </div>
+ <div ng-view>
+ 
+    </div>
 
+<script src='js/app.js'></script>
+<script src='js/controller.js'></script>
+<script src='js/service.js'></script>
 	
 </body>
-<script src='http://code.jquery.com/jquery.min.js'></script>
-<script src='bootstrap/js/bootstrap.min.js'></script>
 </html>
