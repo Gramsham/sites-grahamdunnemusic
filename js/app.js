@@ -5,7 +5,7 @@ angular.module('grahamdunnemusic').config(function($locationProvider, $routeProv
  
     $routeProvider.when('/', {
         templateUrl: 'index.html',
-        controller: 'HomeController'
+        controller: 'IndexController'
     })
     .when('/Productions', {
         templateUrl: 'templates/productions.html',
