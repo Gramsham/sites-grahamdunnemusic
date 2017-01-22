@@ -1,7 +1,9 @@
 angular.module('RouteControllers', [])
-	.controller('IndexController', function($scope) {
 
-	});
+    .controller('HomeController', function($scope) {
+        /*$scope.title = "Welcome To The Website of Graham Dunne";*/
+    });    
+
     .controller('AboutController', function($scope) {
         /*$scope.title = "Welcome To The Website of Graham Dunne";*/
     });
