@@ -1,4 +1,7 @@
 angular.module('RouteControllers', [])
+	.controller('IndexController', function($scope) {
+
+	});
     .controller('AboutController', function($scope) {
         /*$scope.title = "Welcome To The Website of Graham Dunne";*/
     });
