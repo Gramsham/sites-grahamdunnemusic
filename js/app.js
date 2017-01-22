@@ -13,7 +13,7 @@ angular.module('grahamdunnemusic').config(function($locationProvider, $routeProv
     });
     .when('/Productions', {
         templateUrl: 'templates/productions.html',
-        controller: 'ProductionController'
+        controller: 'ProductionsController'
     });
     .when('/Compositions', {
         templateUrl: 'templates/compositions.html',
