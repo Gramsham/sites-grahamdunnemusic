@@ -9,27 +9,27 @@ angular.module('grahamdunnemusic').config(function($locationProvider, $routeProv
         templateUrl:'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/About', {
+    .when('/Aabout', {
         templateUrl: 'templates/bio.html',
         controller: 'AboutController'
     });
-    .when('/Productions', {
+    .when('/productions', {
         templateUrl: 'templates/productions.html',
         controller: 'ProductionsController'
     });
-    .when('/Compositions', {
+    .when('/compositions', {
         templateUrl: 'templates/compositions.html',
         controller: 'CompositionsController'
     });
-    .when('/Guitar', {
+    .when('/guitar', {
         templateUrl: 'templates/guitar.html',
         controller: 'GuitarController'
     });
-    .when('/Transcriptions', {
+    .when('/transcriptions', {
         templateUrl: 'templates/transcriptions.html',
         controller: 'TranscriptionsController'
     });
-    .when('/Contact', {
+    .when('/contact', {
         templateUrl: 'templates/contact.html',
         controller: 'ContactController'
     });
