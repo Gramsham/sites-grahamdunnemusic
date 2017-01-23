@@ -20,6 +20,15 @@ angular.module('RouteControllers', [])
         /*$scope.title = "Welcome To The Website of Graham Dunne";*/
     })
     .controller('ContactController', function($scope) {
-        /*$scope.title = "Welcome To The Website of Graham Dunne";*/
+        $scope.registrationUser = {};
+ 
+        $scope.submitForm = function() {
+            if ($scope.registrationForm.$valid) {
+                $scope.registrationUser.username = $scope.user.username;
+                $scope.registrationUser.password = $scope.user.password;
+            }
+ 
+            console.log($scope.registrationUser.username + " " + $scope.registrationUser.password);
+        }
     });
     
