@@ -3,13 +3,11 @@ angular.module('grahamdunnemusic', ['ngRoute', 'RouteControllers']);
 angular.module('grahamdunnemusic').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
  
-    $routeProvider
-
-    .when('/', {
+    $routeProvider.when('/', {
         templateUrl:'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/Aabout', {
+    .when('/about', {
         templateUrl: 'templates/bio.html',
         controller: 'AboutController'
     })
