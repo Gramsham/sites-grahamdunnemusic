@@ -7,7 +7,7 @@ angular.module('grahamdunnemusic').config(function($locationProvider, $routeProv
         templateUrl:'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/about', {
+    .when('/bio', {
         templateUrl: 'templates/bio.html',
         controller: 'AboutController'
     })
